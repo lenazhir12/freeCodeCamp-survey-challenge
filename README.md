@@ -1,4 +1,12 @@
 
+
+
+Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/VPaoNP.
+
+Fulfill the below user stories and get all of the tests to pass. Give it your own personal style.
+
+You can use HTML, JavaScript, and CSS to complete this project. Plain CSS is recommended because that is what the lessons have covered so far and you should get some practice with plain CSS. You can use Bootstrap or SASS if you choose. Additional technologies (just for example jQuery, React, Angular, or Vue) are not recommended for this project, and using them is at your own risk. Other projects will give you a chance to work with different technology stacks like React. We will accept and try to fix all issue reports that use the suggested technology stack for this project. Happy coding!
+
 User Story #1: I can see a title with id="title" in H1 sized text.
 
 User Story #2: I can see a short explanation with id="description" in P sized text.
@@ -30,3 +38,8 @@ User Story #14: Inside the form element, I can select several fields from a seri
 User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments.
 
 User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs.
+
+### Links
+
+- Solution URL: [View my solution on github](https://github.com/freeCodeCamp-survey-challenge.git)
+- Live Site URL: [View it live here](https://lenazhir12.github.io/freeCodeCamp-survey-challenge)
