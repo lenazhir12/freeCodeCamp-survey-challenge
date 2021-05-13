@@ -12,22 +12,28 @@
 </head>
 
 <body>
+    <div id="back"></div>
+    <main id="main" class="container d-flex flex-column shadow-lg">
+        <figure id="pic-div" class="">
+            <img id="pic" src="/pictures/pet.jpg" alt="">
+        </figure>
 
-    <main class="container flex">
-        <section class="title-section border">
+        <section class="title-section mt-1">
             <!-- User Story #1: I can see a title with id="title" in H1 sized text. -->
-            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <h1 class="text-center" id="title">Who's the cutest pet!</h1>
             <!-- User Story #2: I can see a short explanation with id="description" in P sized text. -->
-            <p id="description">Thank you for taking the time to help us improve the platform</p>
+            <p class="text-center" id="description">Thank you for taking the time to answer this form. Let's brag our
+                beloved pets!</p>
         </section>
-        <section class="form-section border">
+        <hr>
+        <section class="form-section mx-3 mt-2">
             <!-- User Story #3: I can see a form with id="survey-form". -->
-            <form action="" id="survey-form">
+            <form action="" id="survey-form" class="mb-5">
                 <!-- User Story #4: Inside the form element, I am required to enter my name in a field with id="name". -->
                 <div class="mb-3 row">
                     <label for="name" class="col-sm-2 col-form-label" id="name-label">Name</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="name" required placeholder="your name here">
+                        <input type="text" class="form-control" id="name" required placeholder="your full name..">
                     </div>
                 </div>
                 <!-- User Story #5: Inside the form element, I am required to enter an email in a field with id="email". -->
@@ -35,7 +41,8 @@
                 <div class="mb-3 row">
                     <label for="email" class="col-sm-2 col-form-label" id="email-label">Email</label>
                     <div class="col-sm-10">
-                        <input type="email" class="form-control" id="email" required placeholder="your email">
+                        <input type="email" class="form-control" id="email" required
+                            placeholder="example: juan123@gmail.com">
                     </div>
                 </div>
                 <!-- User Story #7: Inside the form, I can enter a number in a field with id="number". -->
@@ -46,7 +53,8 @@
                 <div class="mb-3 row">
                     <label for="number" class="col-sm-2 col-form-label" id="number-label">Age</label>
                     <div class="col-sm-10">
-                        <input type="number" class="form-control" id="number" placeholder="your age" min="10" max="100">
+                        <input type="number" class="form-control" id="number" placeholder="your age (optional)" min="10"
+                            max="100">
                     </div>
                 </div>
                 <!-- User Story #10: For the name, email, and number input fields inside the form I can see corresponding -->
@@ -71,7 +79,7 @@
 
                 <!-- User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group -->
                 <!-- should be grouped using the name attribute. -->
-                <p>Would you recommend freeCodeCamp to a friend?</p>
+                <p class="mt-2 mb-0">Gender</p>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="sex" id="male" value="male">
                     <label class="form-check-label" for="male">
@@ -84,16 +92,9 @@
                         Female
                     </label>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="sex" id="tomboy" value="tomboy">
-                    <label class="form-check-label" for="female">
-                        Female
-                    </label>
-                </div>
 
-
-                <label for="dropdown">Which option best discribe your current role?</label><br>
-                <select name="role" id="dropdown">
+                <label class="mt-2" for="dropdown">Which option best discribe your current role?</label><br>
+                <select name="role" id="dropdown" class="rounded">
                     <option disabled selected value="">Select an option</option>
                     <option value="Student">Student</option>
                     <option value="cat">Full Time Job</option>
@@ -103,28 +104,77 @@
                 </select>
                 <!-- User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must -->
                 <!-- have a value attribute. -->
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="hi" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                        Default checkbox
-                    </label>
+                <div>
+                    <p class="mt-2 mb-0">Which pet/pets do you have?</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="cat" id="pet-choice">
+                        <label class="form-check-label" for="pet-choice">
+                            cat
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="dog" id="pet-choice">
+                        <label class="form-check-label" for="pet-choice">
+                            dog
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="chicken" id="pet-choice">
+                        <label class="form-check-label" for="pet-choice">
+                            chicken
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="hamster" id="pet-choice">
+                        <label class="form-check-label" for="pet-choice">
+                            hamster
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="pig" id="pet-choice">
+                        <label class="form-check-label" for="pet-choice">
+                            pig
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="bird" id="pet-choice">
+                        <label class="form-check-label" for="pet-choice">
+                            bird
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="horse" id="pet-choice">
+                        <label class="form-check-label" for="pet-choice">
+                            horse
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input others " type="checkbox" value="others" id="pet-choice">
+                        <label class="form-check-label" for="pet-choice">
+                            others
+                        </label>
+                    </div>
+                    <div class="form-check show hid">
+                        <label for="name" class="col-sm-2 col-form-label" id="other-label">Please specify</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="other" placeholder="what is/are your pet/pets?">
+                        </div>
+                    </div>
+
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="hello" id="flexCheckChecked" checked>
-                    <label class="form-check-label" for="flexCheckChecked">
-                        Checked checkbox
-                    </label>
-                </div>
+
                 <div>
                     <!-- User Story #15: Inside the form element, I am presented with a textarea at the end for additional -->
                     <!-- comments. -->
-                    <label for="comments">A voice from you is important to us</label>
-                    <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                    <label class="d-block mt-3 mb-1" for="comments">What is the most wonderful memory you and your
+                        pet/pets has?
+                    </label>
+                    <textarea class="rounded" name="comments" id="comments" cols="80" rows="5"></textarea>
                 </div>
 
                 <!-- User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my -->
                 <!-- inputs. -->
-                <button class="btn btn-success" id="submit">submit</button>
+                <button class="btn" id="submit">submit</button>
             </form>
 
 
@@ -133,6 +183,14 @@
 
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script>
+        let others = document.querySelector(".others")
+        let show = document.querySelector('.show')
+        others.addEventListener('click', () => {
+            show.classList.toggle('hid')
+        })
+
+    </script>
 </body>
 
 </html>
