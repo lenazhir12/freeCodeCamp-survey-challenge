@@ -42,4 +42,4 @@ User Story #16: Inside the form element, I am presented with a button with id="s
 ### Links
 
 - Solution URL: [View my solution on github](https://github.com/lenazhir12/freeCodeCamp-survey-challenge.git)
-- Live Site URL: [View it live here](https://lenazhir12.github.io/freeCodeCamp-survey-challenge)
+- Live Site URL: [View it live here](https://lenazhir12.github.io/survey_challenge--freeCodeCamp/)
